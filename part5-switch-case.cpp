@@ -1,10 +1,15 @@
 #include <iostream>
+#include <iomanip>
 
 int main() {
+    // Set number of digits to round to
+    std::cout << std::setprecision(10);
+
     std::cout << "Welcome to Calculator!" << std::endl;
     
     while (true) {
-        int selected_operation, num1, num2;
+        int selected_operation;
+        double num1, num2;
         
         std::cout << "Select an operation to perform:" << std::endl;
         
